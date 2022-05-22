@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51F54FD00B5A6B72F71A8B8C /* Pods_KardashianGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6663CF8F11F1D795CACB2E42 /* Pods_KardashianGame.framework */; };
+		D7359632283A6852001143EF /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7359631283A6852001143EF /* ScoreView.swift */; };
 		D7D8FFE028350C4B00DCD889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D8FFDF28350C4B00DCD889 /* AppDelegate.swift */; };
 		D7D8FFE228350C4B00DCD889 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D8FFE128350C4B00DCD889 /* SceneDelegate.swift */; };
 		D7D8FFE428350C4B00DCD889 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D8FFE328350C4B00DCD889 /* HomeView.swift */; };
@@ -17,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123460CD6E3018F9BFA7385F /* Pods-KardashianGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KardashianGame.release.xcconfig"; path = "Target Support Files/Pods-KardashianGame/Pods-KardashianGame.release.xcconfig"; sourceTree = "<group>"; };
+		6663CF8F11F1D795CACB2E42 /* Pods_KardashianGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KardashianGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7359631283A6852001143EF /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		D7D8FFDC28350C4B00DCD889 /* KardashianGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KardashianGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7D8FFDF28350C4B00DCD889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7D8FFE128350C4B00DCD889 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		D7D8FFEB28350C4B00DCD889 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7D8FFED28350C4B00DCD889 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7D8FFF328350CBD00DCD889 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D7F9B82B7A47AF1B9A79359B /* Pods-KardashianGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KardashianGame.debug.xcconfig"; path = "Target Support Files/Pods-KardashianGame/Pods-KardashianGame.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F54FD00B5A6B72F71A8B8C /* Pods_KardashianGame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C78AA0274A3140891750CE0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6663CF8F11F1D795CACB2E42 /* Pods_KardashianGame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7D8FFD328350C4B00DCD889 = {
 			isa = PBXGroup;
 			children = (
 				D7D8FFDE28350C4B00DCD889 /* KardashianGame */,
 				D7D8FFDD28350C4B00DCD889 /* Products */,
+				E0FEE39EA08E60BF63642173 /* Pods */,
+				C78AA0274A3140891750CE0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +79,22 @@
 				D7D8FFE128350C4B00DCD889 /* SceneDelegate.swift */,
 				D7D8FFE328350C4B00DCD889 /* HomeView.swift */,
 				D7D8FFF328350CBD00DCD889 /* GameView.swift */,
+				D7359631283A6852001143EF /* ScoreView.swift */,
 				D7D8FFE528350C4B00DCD889 /* Main.storyboard */,
 				D7D8FFE828350C4B00DCD889 /* Assets.xcassets */,
 				D7D8FFEA28350C4B00DCD889 /* LaunchScreen.storyboard */,
 				D7D8FFED28350C4B00DCD889 /* Info.plist */,
 			);
 			path = KardashianGame;
+			sourceTree = "<group>";
+		};
+		E0FEE39EA08E60BF63642173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7F9B82B7A47AF1B9A79359B /* Pods-KardashianGame.debug.xcconfig */,
+				123460CD6E3018F9BFA7385F /* Pods-KardashianGame.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7D8FFF028350C4B00DCD889 /* Build configuration list for PBXNativeTarget "KardashianGame" */;
 			buildPhases = (
+				36EBE11293A1FBAFC2B09B9A /* [CP] Check Pods Manifest.lock */,
 				D7D8FFD828350C4B00DCD889 /* Sources */,
 				D7D8FFD928350C4B00DCD889 /* Frameworks */,
 				D7D8FFDA28350C4B00DCD889 /* Resources */,
+				E300759B987666AC1B456290 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +165,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		36EBE11293A1FBAFC2B09B9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KardashianGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E300759B987666AC1B456290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KardashianGame/Pods-KardashianGame-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KardashianGame/Pods-KardashianGame-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KardashianGame/Pods-KardashianGame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7D8FFD828350C4B00DCD889 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -145,6 +216,7 @@
 				D7D8FFE028350C4B00DCD889 /* AppDelegate.swift in Sources */,
 				D7D8FFF428350CBD00DCD889 /* GameView.swift in Sources */,
 				D7D8FFE228350C4B00DCD889 /* SceneDelegate.swift in Sources */,
+				D7359632283A6852001143EF /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +358,7 @@
 		};
 		D7D8FFF128350C4B00DCD889 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7F9B82B7A47AF1B9A79359B /* Pods-KardashianGame.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,6 +386,7 @@
 		};
 		D7D8FFF228350C4B00DCD889 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 123460CD6E3018F9BFA7385F /* Pods-KardashianGame.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
